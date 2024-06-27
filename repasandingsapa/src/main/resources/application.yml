@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: propuesta-cultura-api
+
+  datasource:
+    driverClassName: ${DATASOURCE_DRIVE}
+    url: ${DATASOURCE_URL}
+    username: ${DATASOURCE_USERNAME}
+    password: ${DATASOURCE_PASSWORD}
+    hikari:
+      maximum-pool-size: ${COMMON_DATASOURCE_POOL_SIZE}
+      pool-name: ${COMMON_DATASOURCE_POOL_NAME}
+  jpa:
+    hibernate.ddl-auto: none
+    generate-ddl: false
+    show-sql: false
+
+server:
+  port: 8080
+  servlet:
+    context-path: /propuestascultura
+
